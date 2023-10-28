@@ -17,5 +17,5 @@ You will need to create an S3 bucket and link it to the **backend** folder in mo
 
 # Future work
 Add S3 bucket config in modules to provision it via Terraform.
-
+Create dependencies so that the VPC is created first and then the EC2, RDS and S3 bucket.
 
