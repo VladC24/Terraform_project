@@ -26,7 +26,9 @@ module "rdsmodule" {
     source = "./rds"
 }
 
-
+module "s3module" {
+    source = "./backend"
+}
 
 
 
