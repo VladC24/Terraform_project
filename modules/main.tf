@@ -14,10 +14,10 @@ variable "number_of_servers" {
 provider "aws" {
     region = var.region
 }
-module "myvpc" {
+module "myvpcmodule" {
     source = "./vpc"
 }
-module "ec2" {
+module "ec2module" {
     source = "./ec2"
     count = var.environment == "test" ? 1 : 0   
 }
