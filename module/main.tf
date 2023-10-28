@@ -17,6 +17,10 @@ provider "aws" {
 
 module "ec2" {
     source = "./ec2"
-    count = var.environment == "test" ? 2 : 1
+    count = var.environment == "test" ? 1 : 0   
+}
+
+module "myvpc" {
+    source = "../first_resource"
 }
 
