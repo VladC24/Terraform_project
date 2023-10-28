@@ -22,6 +22,12 @@ module "ec2module" {
     count = var.environment == "test" ? 1 : 0   
 }
 
+output "ec2_module_output" {
+    value = module.ec2module.instance_id
+}
+
+
+
 
 
 
