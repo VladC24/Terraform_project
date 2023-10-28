@@ -4,8 +4,8 @@ resource "aws_db_instance" "myRDS" {
     instance_class = "db.t4g.micro"
     engine = "mariadb"
     engine_version = "10.11.5"
-    username = "bob"
-    password = "password123"
+    username = USERNAME
+    password = PASSWORD
     port = 3306
     allocated_storage = 20
     skip_final_snapshot = true
